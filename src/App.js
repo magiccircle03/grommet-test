@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import {
+  Accordion,
+  AccordionPanel,
+  Text,
   Box,
   Button,
   Collapsible,
@@ -62,10 +65,33 @@ const App = () => {
                     width="medium"
                     background="light-2"
                     elevation="small"
-                    align="center"
-                    justify="center"
+                    align="start"
+                    justify="start"
                   >
-                    sidebar
+                    <Accordion alignSelf="stretch" margin="xlarge">
+                      <AccordionPanel label="동물">
+                        <Box pad="medium" background="light-2">
+                          <Text>길잃은 호랑이</Text>
+                        </Box>
+                        <Box pad="medium" background="light-2">
+                          <Text>문어머리 사자</Text>
+                        </Box>
+                        <Box pad="medium" background="light-2">
+                          <Text>늠름한 삐약이</Text>
+                        </Box>
+                      </AccordionPanel>
+                      <AccordionPanel label="식물">
+                        <Box pad="medium" background="light-2">
+                          <Text>조르디 버섯친구들</Text>
+                        </Box>
+                        <Box pad="medium" background="light-2">
+                          <Text>뚜벅초 다애</Text>
+                        </Box>
+                        <Box pad="medium" background="light-2">
+                          <Text>우리집 마리모</Text>
+                        </Box>
+                      </AccordionPanel>
+                    </Accordion>
                   </Box>
                 </Collapsible>
               ) : (
