@@ -25,6 +25,12 @@ const App = () => {
         size: "18px",
         height: "20px"
       }
+    },
+    accordion: {
+      icons: {
+        color: "hotpink"
+      },
+      border: undefined
     }
   };
   const AppBar = props => (
@@ -40,6 +46,7 @@ const App = () => {
       {...props}
     />
   );
+
   return (
     <Grommet theme={theme} full>
       <ResponsiveContext.Consumer>
@@ -68,7 +75,7 @@ const App = () => {
                     align="start"
                     justify="start"
                   >
-                    <Accordion alignSelf="stretch" margin="xlarge">
+                    <Accordion alignSelf="stretch" margin="medium">
                       <AccordionPanel label="동물">
                         <Box pad="medium" background="light-2">
                           <Text>길잃은 호랑이</Text>
